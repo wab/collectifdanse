@@ -4,5 +4,9 @@
   "dependencies": {
     "bootstrap": "~3.3.1",
     "modernizr": "~2.8.1"
+  },
+  "devDependencies": {
+    "holderjs": "~2.5.0",
+    "font-awesome": "~4.3.0"
   }
 }

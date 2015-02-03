@@ -2,17 +2,16 @@
 @import "less/menu.less";
 
 .accueil .mainheader {
-  background-image: url('../images/bg-accueil-4.jpg');
+  background-image: url('../images/bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
 }
 
-.jumbotron {
-  background: transparent;
-  color: #fff;
-  text-transform: uppercase;
+section {
+	padding: 2em 0;
+	min-height: 100vh;
 }
 
 .menu {
@@ -39,6 +38,9 @@
 }
 
 .jumbotron {
+	background: transparent;
+  	color: #fff;
+  	text-transform: uppercase;
 	h1 {
 		font-size: 100px;
 		text-shadow : 3px 3px 3px rgba(0,0,0,0.4);
@@ -57,4 +59,8 @@
 }
 .column-3 {
 	.content-columns(3);
+}
+
+.projet {
+	background: #ddd;
 }

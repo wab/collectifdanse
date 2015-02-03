@@ -11,7 +11,7 @@
     <!-- bower:css -->
     <!-- endbower -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,700,400' rel='stylesheet' type='text/css'>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../bower_components/font-awesome/css/font-awesome.css" rel="stylesheet">
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
@@ -33,8 +33,8 @@
         <nav class="menu">
           <ul class="list-unstyled">
             <li class="active"><a href="#"><span class="fa fa-home"></span></a></li>
-            <li><a href="#">Projet</a></li>
             <li><a href="#">Agenda</a></li>
+            <li><a href="#">Projet</a></li>
             <li><a href="#">Lieu</a></li>
             <li><a href="#">Presse</a></li>
             <li><a href="#">Contacts</a></li>
@@ -53,7 +53,7 @@
           </svg>
         </div>
       </div>
-      <button class="menu-button" id="open-button">Open Menu</button>
+      <button class="menu-button" id="open-button">menu</button>
 
     <div class="content-wrap">
       <header class="mainheader">
@@ -63,6 +63,62 @@
           </div>
         </div>
       </header>
+      <section class="agenda">
+        <div class="container">
+          <h1>Agenda</h1>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <img src="holder.js/100%x200" alt="">
+                <div class="caption">
+                  <h2 class="h3">Titre</h2>
+                  <p><span class="fa fa-calendar"></span> <span class="text-info">du 10 au 24 avril 2015</span></p>
+                  <hr>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis facilis quae soluta possimus animi repellat eos debitis enim recusandae eaque perspiciatis, quidem temporibus alias doloribus sint eius asperiores, harum dolorum.</p>
+                  <p class="text-right"><a href="#" class="btn btn-primary btn-sm"><span class="fa fa-hand-o-right"></span> Lire la suite</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <img src="holder.js/100%x200" alt="">
+                <div class="caption">
+                  <h2 class="h3">Titre</h2>
+                  <p><span class="fa fa-calendar"></span> <span class="text-info">du 10 au 24 avril 2015</span></p>
+                  <hr>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis facilis quae soluta possimus animi repellat eos debitis enim recusandae eaque perspiciatis, quidem temporibus alias doloribus sint eius asperiores, harum dolorum.</p>
+                  <p class="text-right"><a href="#" class="btn btn-primary btn-sm"><span class="fa fa-hand-o-right"></span> Lire la suite</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <img src="holder.js/100%x200" alt="">
+                <div class="caption">
+                  <h2 class="h3">Titre</h2>
+                  <p><span class="fa fa-calendar"></span> <span class="text-info">du 10 au 24 avril 2015</span></p>
+                  <hr>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis facilis quae soluta possimus animi repellat eos debitis enim recusandae eaque perspiciatis, quidem temporibus alias doloribus sint eius asperiores, harum dolorum.</p>
+                  <p class="text-right"><a href="#" class="btn btn-primary btn-sm"><span class="fa fa-hand-o-right"></span> Lire la suite</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <img src="holder.js/100%x200" alt="">
+                <div class="caption">
+                  <h2 class="h3">Titre</h2>
+                  <p><span class="fa fa-calendar"></span> <span class="text-info">du 10 au 24 avril 2015</span></p>
+                  <hr>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis facilis quae soluta possimus animi repellat eos debitis enim recusandae eaque perspiciatis, quidem temporibus alias doloribus sint eius asperiores, harum dolorum.</p>
+                  <p class="text-right"><a href="#" class="btn btn-primary btn-sm"><span class="fa fa-hand-o-right"></span> Lire la suite</a></p>
+                </div>
+              </div>
+            </div>
+          </div><!-- .row -->
+          <p class="text-right"><span class="fa fa-plus"></span> <a href="#">voir les archives</a></p>
+        </div><!-- .container -->
+      </section>
       <section class="projet">
         <div class="container">
           <h2>Projet</h2>
@@ -92,6 +148,21 @@
           </div>
         </div>
       </section>
+
+      <section class="lieu">
+        <div class="container">
+          <h1>le garage</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="holder.js/100%x400/lava/text:photo le garage"/auto alt="">
+            </div>
+            <div class="col-md-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, tempora veniam numquam eligendi? Ratione facilis quas, aliquid quo odio rem, beatae non repellat, temporibus tempore, illum suscipit ipsam ipsa optio.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -129,6 +200,10 @@
         <script src="scripts/svg.js"></script>
         <script src="scripts/classie.js"></script>
         <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/prototype.js -->
+        <script src="../bower_components/holderjs/holder.js"></script>
         <!-- endbuild -->
 </body>
 </html>
