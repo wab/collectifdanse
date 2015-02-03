@@ -1,0 +1,60 @@
+@import "less/bootstrap.less";
+@import "less/menu.less";
+
+.accueil .mainheader {
+  background-image: url('../images/bg-accueil-4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.jumbotron {
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.menu {
+	background: darken(@brand-primary, 15%);
+	font-size: 1.6em;
+	font-weight: 600;
+	ul > li > a {
+		display: block;
+	} 
+	a {
+ 		text-transform: uppercase;
+ 		text-shadow : 1px 1px 0px rgba(0,0,0,0.4);
+
+		&:hover, &:focus {
+			color: lighten(@brand-primary, 15%);
+			text-decoration: none;
+		}
+	}
+	.reseaux {
+		padding: 4px 0;
+		border-top: solid 1px rgba(255,255,255,0.1);
+
+	}
+}
+
+.jumbotron {
+	h1 {
+		font-size: 100px;
+		text-shadow : 3px 3px 3px rgba(0,0,0,0.4);
+		span {
+			font-size: 120%;
+			text-shadow : 
+				3px 3px 0px rgba(255,255,255,1),
+				3px 3px 3px rgba(0,0,0,0.4);
+		}
+
+	}
+}
+
+.column-2 {
+	.content-columns(2);
+}
+.column-3 {
+	.content-columns(3);
+}
