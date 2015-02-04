@@ -35,28 +35,33 @@ body,
 
 /* Menu Button */
 .menu-button {
+	display: block;
 	position: fixed;
 	z-index: 1000;
+	width: auto;
 	margin: 1em;
-	padding: 0;
-	width: 4em;
-	height: 1.8em;
+	padding: 0.5em;
+	text-align: center;
 	border: none;
-	text-indent: 2.5em;
-	font-size: 1em;
-	// color: transparent;
-	background: transparent;
+	color: #fff;
+	background: rgba(0,0,0,0.4);
+	text-shadow : 1px 1px 0px rgba(0,0,0,0.4);
+	span {
+		font-size: 1.6em;
+
+	}
+	
 }
 
-.menu-button::before {
-	position: absolute;
-	top: 0.5em;
-	right: 2.5em;
-	bottom: 0.5em;
-	left: 0em;
-	background: linear-gradient(#fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%);
-	content: '';
-}
+// .menu-button::before {
+// 	position: absolute;
+// 	top: 0;
+// 	right: 3.5em;
+// 	bottom: 0;
+// 	left: 0;
+// 	background: linear-gradient(#fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%);
+// 	content: '';
+// }
 
 .menu-button:hover {
 	opacity: 0.6;
@@ -111,6 +116,7 @@ body,
 	width: 240px;
 	height: 100%;
 	padding: 2em 1em;
+	text-align: right;
 }
 
 .icon-list {
