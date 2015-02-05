@@ -6661,8 +6661,7 @@ article {
   background: #f4f4f4;
 }
 .lieu {
-  background: #999;
-  color: #fff;
+  background: url(../images/squared_metal.png);
 }
 .ours {
   padding: 2em 0;
