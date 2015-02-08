@@ -6603,6 +6603,9 @@ body,
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
+body {
+  position: relative;
+}
 .mainheader {
   background-image: url('../images/bg.jpg');
   background-size: cover;
@@ -6629,6 +6632,11 @@ body,
 section,
 article {
   padding: 4em 0;
+}
+.subpage {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #eee;
 }
 .menu {
   background: #331a4c;

@@ -31,7 +31,7 @@ gulp.task('html', ['less'], function () {
     .pipe($.if('*.css', $.csso()))
     .pipe(assets.restore())
     .pipe($.useref())
-    .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
+    //.pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
     .pipe(gulp.dest('dist'));
 });
 
@@ -45,7 +45,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('fonts', function () {
-  return gulp.src(require('main-bower-files')().concat('app/fonts/**/*'))
+  return gulp.src(require('main-bower-files')().concat(['app/fonts/**/*', 'bower_components/font-awesome/fonts/*']))
     .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
     .pipe($.flatten())
     .pipe(gulp.dest('dist/fonts'));
@@ -90,11 +90,11 @@ gulp.task('wiredep', function () {
   var wiredep = require('wiredep').stream;
 
   gulp.src('app/*.html')
-    .pipe(wiredep({exclude: 'bower_components/bootstrap'}))
+    .pipe(wiredep({exclude: 'bower_components/bootstrap/dist/css/bootstrap.css'}))
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('watch', ['connect'], function () {
+gulp.task('watch', function () {
   $.livereload.listen();
 
   // watch for changes
@@ -112,7 +112,7 @@ gulp.task('watch', ['connect'], function () {
   gulp.watch('bower.json', ['wiredep']);
 });
 
-gulp.task('build', ['less', 'jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['less', 'html', 'images', 'fonts', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

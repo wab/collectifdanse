@@ -10,7 +10,6 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,700,400' rel='stylesheet' type='text/css'>
     <link href="../bower_components/font-awesome/css/font-awesome.css" rel="stylesheet">
     <!-- endbuild -->
 
@@ -18,9 +17,13 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
+    <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,700,400' rel='stylesheet' type='text/css'>
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+
+
   </head>
 
   <body class="page">
@@ -33,11 +36,11 @@
       <nav class="menu">
         <ul class="list-unstyled">
           <li><a href="index.html"><span class="fa fa-home"></span> Accueil</a></li>
-          <li><a href="agenda.html"><span class="fa fa-calendar"></span> Agenda</a></li>
-          <li class="active"><a href="page.html"><span class="fa fa-coffee"></span> Projet</a></li>
-          <li><a href="#"><span class="fa fa-map-marker"></span> Lieu</a></li>
+          <li class="active"><a href="agenda.html"><span class="fa fa-calendar"></span> Agenda</a></li>
+          <li><a href="subpage.html"><span class="fa fa-coffee"></span> Projet</a></li>
+          <li><a href="#lieu"><span class="fa fa-map-marker"></span> Lieu</a></li>
           <li><a href="#"><span class="fa fa-newspaper-o"></span> Presse</a></li>
-          <li><a href="#"><span class="fa fa-envelope"></span> Contacts</a></li>
+          <li><a href="page.html"><span class="fa fa-envelope"></span> Contacts</a></li>
         </ul>
         <div class="reseaux">
           <a href="#"><i class="fa fa-twitter-square"></i></a>
@@ -64,7 +67,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8">
-              <h1>L'agenda</h1>
+              <h1>L'agenda <small>/ Ouvertures publiques</small> </h1>
               <hr>
               <ol class="list-unstyled">
                 <li>
@@ -77,8 +80,9 @@
                     <div class="media-body">
                       <h2 class="media-heading">Media heading</h2>
                       <p><span class="fa fa-calendar"></span> <span class="text-info">du 10 au 24 avril 2015</span></p>
-                      <p><a href="#" class="label label-default">catégorie 1</a> <a href="#" class="label label-default">catégorie 2</a></p>
+                      <p><span class="fa fa-folder"></span> <a href="#">Ouvertures publiques</a></p>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste qui maiores nihil repudiandae voluptate a unde, eum sit omnis dolore culpa mollitia ab iusto obcaecati, dolorem voluptatem quam cupiditate! Quod?</p>
+                      <p><span class="fa fa-tags"></span> <a href="#" class="label label-default">danse</a> <a href="#" class="label label-default">tag 2</a></p>
                       <p class="text-right"><span class="fa fa-hand-o-right"></span> <a href="#">Lire la suite</a></p>
                     </div>
                   </div>
@@ -166,13 +170,32 @@
                   </div>
                 </div>
               </form>
-              <div class="list-group">
-                <a href="#" class="list-group-item">Cras justo odio<span class="badge">10</span></a>
-                <a href="#" class="list-group-item active">Dapibus ac facilisis in<span class="badge">14</span></a>
-                <a href="#" class="list-group-item">Morbi leo risus<span class="badge">18</span></a>
-                <a href="#" class="list-group-item">Porta ac consectetur ac<span class="badge">3</span></a>
-                <a href="#" class="list-group-item">Vestibulum at eros<span class="badge">5</span></a>
-              </div>
+              <hr>
+              <nav>
+                <h2>Catégories</h2>
+                <div class="list-group">
+                  <a href="#" class="list-group-item">
+                    <span class="badge">10</span>
+                    <h4 class="list-group-item-heading">Un dimanche au garage</h4>
+                    <p class="list-group-item-text">Incidunt nihil illum tenetur quia officia fugiat, rerum aperiam voluptates ab optio cum vel asperiores!</p>
+                  </a>
+                  <a href="#" class="list-group-item active">
+                    <span class="badge">18</span>
+                    <h4 class="list-group-item-heading">Ouvertures publiques</h4>
+                    <p class="list-group-item-text">Incidunt nihil illum tenetur quia officia fugiat, rerum aperiam voluptates ab optio cum vel asperiores!</p>
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="badge">8</span>
+                    <h4 class="list-group-item-heading">Rencontres publiques</h4>
+                    <p class="list-group-item-text">Incidunt nihil illum tenetur quia officia fugiat, rerum aperiam voluptates ab optio cum vel asperiores!</p>
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="badge">2</span>
+                    <h4 class="list-group-item-heading">Ateliers</h4>
+                    <p class="list-group-item-text">Incidunt nihil illum tenetur quia officia fugiat, rerum aperiam voluptates ab optio cum vel asperiores!</p>
+                  </a>
+                </div>
+              </nav>
               <aside class="well">
                 <h2>Titre</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aut voluptatem, voluptatum voluptates quisquam temporibus maiores delectus, sit doloremque tenetur deserunt, voluptatibus vel ducimus quibusdam architecto reprehenderit quod perferendis accusantium.</p>              
@@ -185,10 +208,10 @@
 
       <section class="lieu">
         <div class="container">
-          <h1>le garage</h1>
+          <h1 id="lieu"><span class="fa fa-map-marker"></span> le garage</h1>
           <div class="row">
             <div class="col-md-6">
-              <img src="holder.js/100%x400/lava/text:photo le garage"/auto alt="">
+              <img src="holder.js/100%x400/lava/text:garage" alt="">
             </div>
             <div class="col-md-6">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, tempora veniam numquam eligendi? Ratione facilis quas, aliquid quo odio rem, beatae non repellat, temporibus tempore, illum suscipit ipsam ipsa optio.</p>
@@ -199,7 +222,45 @@
 
       <footer class="ours">
         <div class="container">
-          <p> <span class="fa fa-copyright"></span> Collectif Danse Rennes Métropole / <a href="#">contact</a> / <a href="#">plan du site</a> / <a href="#">mentions légales</a></p>
+          <div class="row">
+            <div class="col-md-4">
+              <h2 class="h4"><span class="fa fa-sitemap"></span> Plan du site</h2>
+              <hr>
+              <ul class="list-unstyled">
+                <li class="active"><span class="fa fa-home"></span> <a href="index.html">Accueil</a></li>
+                <li><span class="fa fa-calendar"></span> <a href="agenda.html">Agenda</a></li>
+                <li><span class="fa fa-coffee"></span> <a href="subpage.html">Projet</a></li>
+                <li><span class="fa fa-map-marker"></span> <a href="#">Lieu</a></li>
+                <li><span class="fa fa-newspaper-o"></span> <a href="#">Presse</a></li>
+                <li><span class="fa fa-envelope"></span> <a href="page.html">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h2 class="h4"><span class="fa fa-link"></span> Quelques liens utiles ...</h2>
+              <hr>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Lorem ipsum dolor adipisicing elit.</a></li>
+                <li><a href="index.html">Lorem ipsum, consectetur adipisicing elit.</a></li>
+                <li><a href="index.html">Lorem ipsum dolor sit amet,</a></li>
+                <li><a href="index.html">Lorem ipsum amet,  elit.</a></li>
+                <li><a href="index.html">Lorem  adipisicing elit.</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h2 class="h4"><span class="fa fa-send"></span> La newsletter</h2>
+              <hr>
+              <p>Inscrivez-vous à notre newsletter mensuelle</p>
+                
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="entrez votre email">
+                  <span class="input-group-btn">
+                    <button class="btn btn-info" type="button">S'inscrire</button>
+                  </span>
+                </div><!-- /input-group -->
+            </div>
+          </div>
+          <hr>
+          <p class="text-right"><span class="fa fa-copyright"></span> Collectif Danse Rennes Métropole / <a href="#">contact</a> / <a href="#">plan du site</a> / <a href="#">mentions légales</a></p>
         </div>
       </footer>
 
@@ -215,35 +276,44 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-8222119-27');ga('send','pageview');
+    </script>
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/Snap.svg/dist/snap.svg-min.js"></script>
+    <script src="../bower_components/classie/classie.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="../bower_components/bootstrap/js/affix.js"></script>
-        <script src="../bower_components/bootstrap/js/alert.js"></script>
-        <script src="../bower_components/bootstrap/js/dropdown.js"></script>
-        <script src="../bower_components/bootstrap/js/tooltip.js"></script>
-        <script src="../bower_components/bootstrap/js/modal.js"></script>
-        <script src="../bower_components/bootstrap/js/transition.js"></script>
-        <script src="../bower_components/bootstrap/js/button.js"></script>
-        <script src="../bower_components/bootstrap/js/popover.js"></script>
-        <script src="../bower_components/bootstrap/js/carousel.js"></script>
-        <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
-        <script src="../bower_components/bootstrap/js/collapse.js"></script>
-        <script src="../bower_components/bootstrap/js/tab.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/plugins.js -->
+    <script src="../bower_components/bootstrap/js/affix.js"></script>
+    <script src="../bower_components/bootstrap/js/alert.js"></script>
+    <script src="../bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="../bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="../bower_components/bootstrap/js/modal.js"></script>
+    <script src="../bower_components/bootstrap/js/transition.js"></script>
+    <script src="../bower_components/bootstrap/js/button.js"></script>
+    <script src="../bower_components/bootstrap/js/popover.js"></script>
+    <script src="../bower_components/bootstrap/js/carousel.js"></script>
+    <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="../bower_components/bootstrap/js/collapse.js"></script>
+    <script src="../bower_components/bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
 
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/svg.js"></script>
-        <script src="scripts/classie.js"></script>
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 
-        <!-- build:js scripts/prototype.js -->
-        <script src="../bower_components/holderjs/holder.js"></script>
-        <!-- endbuild -->
+    <script src="scripts/holder.min.js"></script>
+
 </body>
 </html>
