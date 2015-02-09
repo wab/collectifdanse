@@ -107,7 +107,7 @@ gulp.task('watch', function () {
 
   gulp.watch([
     'app/styles/less/*.less',
-    'app/stryles/main/less'
+    'app/styles/main.less'
     ], ['less'])
   gulp.watch('bower.json', ['wiredep']);
 });
