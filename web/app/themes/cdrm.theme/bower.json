@@ -8,7 +8,10 @@
   "private": true,
   "dependencies": {
     "modernizr": "2.8.2",
-    "bootstrap-sass-official": "3.3.5"
+    "bootstrap-sass-official": "3.3.5",
+    "font-awesome": "~4.4.0",
+    "Snap.svg": "~0.3.0",
+    "classie": "~1.0.1"
   },
   "overrides": {
     "modernizr": {
@@ -16,7 +19,7 @@
     },
     "bootstrap-sass-official": {
       "main": [
-        "./assets/stylesheets/_bootstrap.scss",
+        "../../assets/styles/bootstrap.scss",
         "./assets/javascripts/bootstrap/transition.js",
         "./assets/javascripts/bootstrap/alert.js",
         "./assets/javascripts/bootstrap/button.js",
@@ -34,6 +37,17 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "font-awesome": {
+      "main" : [
+        "./scss/font-awesome.scss",
+        "./fonts/fontawesome-webfont.eot",
+        "./fonts/fontawesome-webfont.svg",
+        "./fonts/fontawesome-webfont.ttf",
+        "./fonts/fontawesome-webfont.woff",
+        "./fonts/fontawesome-webfont.woff2",
+        "./fonts/FontAwesome.otf"
       ]
     }
   }

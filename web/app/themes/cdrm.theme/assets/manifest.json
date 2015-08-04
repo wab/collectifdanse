@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "main.js": {
-      "files": [
+      "files": [       
+        "scripts/vendor/*.js",
+        "scripts/menu.js",
         "scripts/main.js"
       ],
       "main": true
@@ -25,6 +27,6 @@
     }
   },
   "config": {
-    "devUrl": "http://example.dev"
+    "devUrl": ""
   }
 }
