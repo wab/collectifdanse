@@ -1,0 +1,26 @@
+.mainheader {
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 180px;
+  padding: 1em 0;
+  text-transform: uppercase;
+	h1 {
+		text-shadow : 3px 3px 3px rgba(0,0,0,0.4);
+		span {
+			font-size: 120%;
+			text-shadow : 
+				1px 1px 0px rgba(255,255,255,1),
+				2px 2px 3px rgba(0,0,0,0.4);
+		}
+	}
+}
+.home .mainheader {
+	height: 100vh;
+	h1 {
+		font-size: 100px;
+
+	}
+}
