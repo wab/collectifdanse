@@ -21,4 +21,3 @@
     </svg>
   </div>
 </div>
-<button class="menu-button" id="open-button"><span class="fa fa-bars"></span><br>menu</button>
