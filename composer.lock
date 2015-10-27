@@ -1,10 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2829392fcb59693d9d5e5140429d7fdd",
+    "hash": "da38bf9ca6c4b3667a3f777a7a0ddfbf",
+    "content-hash": "fea5c2605ba03f4628e90f2685814102",
     "packages": [
         {
             "name": "composer/installers",
@@ -103,16 +104,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.2.3",
+            "version": "4.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "56525f7941a9835ae64deafcaff15cd52336e467"
+                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/56525f7941a9835ae64deafcaff15cd52336e467",
-                "reference": "56525f7941a9835ae64deafcaff15cd52336e467",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
+                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
                 "shasum": ""
             },
             "require": {
@@ -136,7 +137,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2015-07-23 11:16:08"
+            "time": "2015-09-15 15:01:23"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -188,16 +189,16 @@
         },
         {
             "name": "roots/soil",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/soil.git",
-                "reference": "adaf4a0941224dfeab470a123d59dd925fc65004"
+                "reference": "4e9ad4562e1592c49f1f3a26c4dad1e00500c0c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/adaf4a0941224dfeab470a123d59dd925fc65004",
-                "reference": "adaf4a0941224dfeab470a123d59dd925fc65004",
+                "url": "https://api.github.com/repos/roots/soil/zipball/4e9ad4562e1592c49f1f3a26c4dad1e00500c0c0",
+                "reference": "4e9ad4562e1592c49f1f3a26c4dad1e00500c0c0",
                 "shasum": ""
             },
             "require": {
@@ -221,12 +222,12 @@
                     "homepage": "https://github.com/retlehs"
                 }
             ],
-            "description": "Clean up WordPress markup, relative URLs, nice search",
+            "description": "A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications",
             "homepage": "https://roots.io/plugins/soil/",
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-04-29 04:46:56"
+            "time": "2015-09-24 17:30:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -276,15 +277,15 @@
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "4.4.2",
+            "version": "4.4.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
-                "reference": "trunk"
+                "reference": "tags/4.4.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -296,15 +297,15 @@
         },
         {
             "name": "wpackagist-plugin/relevanssi",
-            "version": "3.4.2",
+            "version": "3.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/relevanssi/",
-                "reference": "tags/3.4.2"
+                "reference": "tags/3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/relevanssi.3.4.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/relevanssi.3.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -316,15 +317,15 @@
         },
         {
             "name": "wpackagist-plugin/types",
-            "version": "1.7.7",
+            "version": "1.8.7.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/types/",
-                "reference": "tags/1.7.7"
+                "reference": "tags/1.8.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/types.1.7.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/types.1.8.7.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -336,15 +337,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "2.3.2",
+            "version": "2.3.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/2.3.2"
+                "reference": "tags/2.3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.5.zip",
                 "reference": null,
                 "shasum": null
             },
