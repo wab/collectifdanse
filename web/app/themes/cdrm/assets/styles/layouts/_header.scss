@@ -18,20 +18,22 @@
   	}
   
   }
-
-
-	h1 {
+	.site-title {
 		text-shadow : 3px 3px 3px rgba(0,0,0,0.4);
 		margin: 0;
+		font-size: 2rem;
 		span {
 			text-shadow : 
 				1px 1px 0px rgba(255,255,255,1),
-				2px 2px 3px rgba(0,0,0,0.4);
+				//2px 2px 3px rgba(0,0,0,0.4);
 		}
 	}
 }
 .home .mainheader {
 	height: 70vh;
+	.site-title {
+		font-size: $display2-size;
+	}
 }
 
 
