@@ -1,13 +1,10 @@
 <div class="menu-wrap">
   <nav class="menu">
-    <ul class="list-unstyled">
-      <li class="active"><a href="index.html"><span class="fa fa-home"></span> Accueil</a></li>
-      <li><a href="agenda.html"><span class="fa fa-calendar"></span> Agenda</a></li>
-      <li><a href="subpage.html"><span class="fa fa-coffee"></span> Projet</a></li>
-      <li><a href="#"><span class="fa fa-map-marker"></span> Lieu</a></li>
-      <li><a href="#"><span class="fa fa-newspaper-o"></span> Presse</a></li>
-      <li><a href="page.html"><span class="fa fa-envelope"></span> Contacts</a></li>
-    </ul>
+    <?php
+      if (has_nav_menu('primary_navigation')) :
+        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'list-unstyled']);
+      endif;
+      ?>
     <div class="reseaux">
       <a href="#"><i class="fa fa-twitter-square"></i></a>
       <a href="#"><i class="fa fa-facebook-square"></i></a>
