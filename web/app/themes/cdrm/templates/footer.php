@@ -4,14 +4,11 @@
 	    <div class="col-md-4">
 	      <h2 class="h4"><span class="fa fa-sitemap"></span> Plan du site</h2>
 	      <hr>
-	      <ul class="list-unstyled">
-	        <li class="active"><span class="fa fa-home"></span> <a href="index.html">Accueil</a></li>
-	        <li><span class="fa fa-calendar"></span> <a href="agenda.html">Agenda</a></li>
-	        <li><span class="fa fa-coffee"></span> <a href="subpage.html">Projet</a></li>
-	        <li><span class="fa fa-map-marker"></span> <a href="#">Lieu</a></li>
-	        <li><span class="fa fa-newspaper-o"></span> <a href="#">Presse</a></li>
-	        <li><span class="fa fa-envelope"></span> <a href="page.html">Contacts</a></li>
-	      </ul>
+ 			<?php
+		      if (has_nav_menu('primary_navigation')) :
+		        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'list-unstyled']);
+		      endif;
+		      ?>
 	    </div>
 	    <div class="col-md-4">
 	      <h2 class="h4"><span class="fa fa-link"></span> Quelques liens utiles ...</h2>

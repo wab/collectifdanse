@@ -41,8 +41,8 @@ $agenda = array(
                 <?php include Wrapper\template_path(); ?>
                </div>
                <div class="text-center">
-                 <a href="#" class="btn btn-primary-outline btn-lg">Découvrir le projet</a>
-                 <a href="#" class="btn btn-info-outline btn-lg">Faire une demande résidence</a>
+                 <a href="#" class="btn btn-primary"><i class="fa fa-coffee"></i> Découvrir le projet</a>
+                 <a href="#" class="btn btn-info"><i class="fa fa-edit"></i> Faire une demande résidence</a>
                </div>
             </div>
           </div>
