@@ -1,11 +1,11 @@
 # Documentation: https://roots.io/trellis/docs/remote-server-setup/
 wordpress_sites:
-  example.com:
+  cdrm.wabdesign.fr:
     site_hosts:
-      - staging.example.com
+      - cdrm.wabdesign.fr
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    repo: git@github.com:roots/bedrock.git
-    branch: master
+    repo: git@github.com:wab/collectifdanse.git
+    branch: trellis
     # subtree_path: site # relative path to your Bedrock/WP directory in your repo (above) if it is not the root (like the roots-example-project structure)
     multisite:
       enabled: false
@@ -17,19 +17,19 @@ wordpress_sites:
       duration: 30s
     env:
       disable_wp_cron: true
-      wp_home: http://staging.example.com
-      wp_siteurl: http://staging.example.com/wp
+      wp_home: http://cdrm.wabdesign.fr
+      wp_siteurl: http://cdrm.wabdesign.fr/wp
       wp_env: staging
-      db_name: example_staging
-      db_user: example_dbuser
-      db_password: example_dbpassword
+      db_name: cdrm
+      db_user: wab
+      db_password: EthzH4gK
       # Generate your keys here: https://api.wordpress.org/secret-key/1.1/salt/
       # These CANNOT contain the characters "{%" in succession
-      auth_key: "generateme"
-      secure_auth_key: "generateme"
-      logged_in_key: "generateme"
-      nonce_key: "generateme"
-      auth_salt: "generateme"
-      secure_auth_salt: "generateme"
-      logged_in_salt: "generateme"
-      nonce_salt: "generateme"
+      auth_key: "Kl}r#sD><&BG|`bD*0NqBUU;k[RV(CfT,Dh9#{<OZ8+^dm+,6/lH$+H vA$_/*gI"
+      secure_auth_key: ">uTjDj-l)+pz:lf%Y=-,R]30|Vhe~~:r7WxGDJ23^$f8@1dQ#t)Z&jAADGTSVmIO"
+      logged_in_key: "?@(:sP,8mO!^8wVoY&?N$I,<p VXKcEFebn`2O|<I%t=RLffN;]* d<n8w37na`~"
+      nonce_key: "4V&Zcxg}a+ow1m^+r7ri[$b/A$tX>_]G--Bj3iBM,fQ),5U~x.Kg03394m`?FuX9"
+      auth_salt: "#XHZsmjS{.?>]]jnu4Q>eOa4ebo+6XA6:%N~*F+2Y9Bcfqdn;@cZQ^HH)Y] c{ >"
+      secure_auth_salt: "D5NUv0b);cG[)K)$wd=f>l!5_3}Q:-EwB7[Fj!XWZxe&z5}Tl6}qU 6(R0;V2*DE"
+      logged_in_salt: "|sRMrLe|Yo49uV.T}WTVf^7rGe<lkU(Xr9YA5LP4r,G=6yHkf6t_G|[ OMOvzPAO"
+      nonce_salt: "JmWDFJ.AWd0~bDCx@Q<>GCS~EuFLvg&t<)sN<T=PJvic@-N-9f,U6hk;eBOy-=G "

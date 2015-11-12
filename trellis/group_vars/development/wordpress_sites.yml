@@ -6,7 +6,7 @@ wordpress_sites:
     local_path: ../site
     site_install: true
     site_title: Collectif Danse Rennes Métropole
-    db_import: ../databases/cdrm.sql.gz
+    db_import: collectifdanse-2015-11-12.sql
     admin_user: wab
     admin_password: 5tc@WP
     admin_email: wab2com@gmail.com
