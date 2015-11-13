@@ -42,15 +42,16 @@
 	display: block;
 	position: absolute;
 	top: 0;
-	left: -100px;
+	right: 0;
 	z-index: 1000;
 	width: auto;
 	margin: 1em;
 	padding: 10px 15px;
 	text-align: center;
+	font-size: 1.4em;
 	border: none;
 	color: #fff;
-	background: rgba(0,0,0,0.4);
+	background-color: $gray-dark;
 	text-shadow : 1px 1px 0px rgba(0,0,0,0.4);
 	span {
 		//font-size: 4rem;

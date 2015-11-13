@@ -36,13 +36,13 @@ $agenda = array(
       <main class="p-t-lg p-b-lg" role="main">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-lg-8 col-md-9 col-sm-12">
                <div class="presentation">
                 <?php include Wrapper\template_path(); ?>
                </div>
-               <div class="text-center">
-                 <a href="#" class="btn btn-primary"><i class="fa fa-coffee"></i> Découvrir le projet</a>
-                 <a href="#" class="btn btn-info"><i class="fa fa-edit"></i> Faire une demande résidence</a>
+               <div class="cta">
+                 <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-coffee"></i> Découvrir le projet</a>
+                 <a href="#" class="btn btn-info-outline btn-lg"><i class="fa fa-edit"></i> Faire une demande résidence</a>
                </div>
             </div>
           </div>
@@ -51,6 +51,7 @@ $agenda = array(
 
       <section class="agenda p-t-lg p-b-lg">
         <div class="container">
+          <h1>Les résidences en cours et à venir</h1>
           <div class="row">
 
             <?php 
@@ -63,7 +64,7 @@ $agenda = array(
 
                 <!-- the loop -->
                 <?php while ( $agenda_query->have_posts() ) : $agenda_query->the_post(); ?>
-                  <div class="col-md-4">
+                  <div class="col-lg-4 col-md-8 col-sm-10 col-xs-12">
                     <div class="card">
                       <?php get_template_part('templates/excerpt', 'event'); ?>
                     </div>
