@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bootstrap": "~4.0.0",
+    "bootstrap": "4.0.0-alpha",
     "font-awesome": "~4.4.0",
     "Snap.svg": "~0.3.0",
     "classie": "~1.0.1"
