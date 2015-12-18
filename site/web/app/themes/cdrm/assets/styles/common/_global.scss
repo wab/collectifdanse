@@ -7,7 +7,7 @@ body,
 }
 
 img {
-	@include img-responsive();
+	@extend .img-responsive;
 }
 
 .content-wrap {
