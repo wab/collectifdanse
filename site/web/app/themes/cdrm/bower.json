@@ -7,10 +7,12 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bootstrap": "4.0.0-alpha",
+    "bootstrap": "~4",
     "font-awesome": "~4.4.0",
     "Snap.svg": "~0.3.0",
-    "classie": "~1.0.1"
+    "classie": "~1.0.1",
+    "owl.carousel": "~2.0.0-beta.3",
+    "tether": "~1.1.1"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -19,7 +21,7 @@
       ]
     },
     "font-awesome": {
-      "main" : [
+      "main": [
         "./scss/font-awesome.scss",
         "./fonts/fontawesome-webfont.eot",
         "./fonts/fontawesome-webfont.svg",
