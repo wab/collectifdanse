@@ -31,6 +31,14 @@
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
+        $('.carousel').owlCarousel({
+          loop: true,
+          items: 1,
+          autoplay: true,
+          dots: false,
+          animateIn: 'bounceInRight',
+          animateOut: 'bounceOutLeft'
+        });
       }
     },
     // About us page, note the change from about-us to about_us.
