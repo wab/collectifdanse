@@ -1,10 +1,10 @@
 .mainheader {
-  //background-image: url(../images/header/bg1.jpg);
+  background-image: url(../images/header/bg1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  //background-attachment: fixed;
-  background-color: $gray-lighter;
+  background-position: bottom left;
+  background-attachment: fixed;
+  background-color: $gray-lightest;
   color: #fff;
   min-height: 180px;
   padding: 1em 0;
