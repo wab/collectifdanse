@@ -37,7 +37,7 @@ $agenda = array(
 
   				</div>
                <div class="cta">
-                 <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-coffee"></i> Découvrir le projet</a>
+                 <a href="<?php bloginfo('url') ?>/le-projet" class="btn btn-primary btn-lg"><i class="fa fa-coffee"></i> Découvrir le projet</a>
                  <a href="#" class="btn btn-info-outline btn-lg"><i class="fa fa-edit"></i> Faire une demande résidence</a>
                </div>
             </div>

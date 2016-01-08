@@ -24,6 +24,6 @@
     }
   },
   "config": {
-    "devUrl": "http://localhost/collectifdanse/site/web"
+    "devUrl": "dev.collectifdanse.fr"
   }
 }
