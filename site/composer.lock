@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4ebe7e2a3b9203168ed1dfdb1cac5dfa",
-    "content-hash": "a8c1bcaa6e12c510e8ee626291d0c9b1",
+    "hash": "6a8cede93466c3312dd65dfe8301e980",
+    "content-hash": "c60d85cf3a29e60587fa5e9cd60fa3dd",
     "packages": [
         {
             "name": "composer/installers",
@@ -285,15 +285,15 @@
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "4.4.4",
+            "version": "4.4.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
-                "reference": "trunk"
+                "reference": "tags/4.4.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -305,15 +305,15 @@
         },
         {
             "name": "wpackagist-plugin/relevanssi",
-            "version": "3.5",
+            "version": "3.5.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/relevanssi/",
-                "reference": "tags/3.5"
+                "reference": "tags/3.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/relevanssi.3.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/relevanssi.3.5.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -322,6 +322,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/relevanssi/"
+        },
+        {
+            "name": "wpackagist-plugin/taxonomy-terms-order",
+            "version": "1.4.7",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/taxonomy-terms-order/",
+                "reference": "tags/1.4.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/taxonomy-terms-order.1.4.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/taxonomy-terms-order/"
         },
         {
             "name": "wpackagist-plugin/types",
