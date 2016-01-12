@@ -30,7 +30,7 @@
     
 ?>
 
-
+<p><a href="<?php bloginfo('url') ?>/archives" class="btn btn-block btn-primary-outline <?php if (is_page_template('page-archives.php')) { echo 'active disabled'; } ?>"><i class="fa fa-archive"></i> voir les archives</a></p>
 <h2 class="h4">Catégories :</h2>
 <ul class="nav nav-category">
 	<?php wp_list_categories( $eventype ); ?>

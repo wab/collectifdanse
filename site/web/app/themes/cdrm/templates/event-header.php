@@ -82,7 +82,7 @@
     <?php endif; ?>
     
     <p><i class="fa fa-calendar"></i> <time datetime="<?php echo $eventtime; ?>" class="text-info"><?php echo $eventdate; ?></time></p>
-	<?php if(!is_front_page()): ?>
+	<?php if(!is_front_page() && !is_page_template( 'page-archives.php' )): ?>
 		<?php if(get_the_terms($post->ID, 'event-type') ): ?>
 			<p><?php echo get_the_term_list( $post->ID, 'event-type',  '<i class="fa fa-folder"></i> ', '.', '' ); ?></p>
 		<?php endif; ?>

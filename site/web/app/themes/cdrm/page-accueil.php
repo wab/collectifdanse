@@ -17,6 +17,12 @@ $agenda = array(
       'terms'    => 'residences',
     ),
   ),
+  'meta_query'  => array(         // restrict posts based on meta values
+    'key'     => 'event_end_date',  // which meta to query
+    'value'   => date("y-m-d"),  // value for comparison
+    'compare' => '>=',          // method of comparison
+    'type'    => 'DATE'         // datatype, we don't want to compare the string values
+  ) // end meta_query array
 
 );
 
@@ -37,8 +43,8 @@ $agenda = array(
 
   				</div>
                <div class="cta">
-                 <a href="<?php bloginfo('url') ?>/le-projet" class="btn btn-primary btn-lg"><i class="fa fa-coffee"></i> Découvrir le projet</a>
-                 <a href="#" class="btn btn-info-outline btn-lg"><i class="fa fa-edit"></i> Faire une demande résidence</a>
+                 <a href="<?php bloginfo('url') ?>/le-projet" class="btn btn-primary btn-lg"><i class="fa fa-search"></i> Découvrir le projet</a>
+                 <a href="#" class="btn btn-info-outline btn-lg"><i class="fa fa-pencil"></i> Faire une demande résidence</a>
                </div>
             </div>
           </div>
