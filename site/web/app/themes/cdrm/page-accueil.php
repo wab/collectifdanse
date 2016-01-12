@@ -44,7 +44,16 @@ $agenda = array(
   				</div>
                <div class="cta">
                  <a href="<?php bloginfo('url') ?>/le-projet" class="btn btn-primary btn-lg"><i class="fa fa-search"></i> Découvrir le projet</a>
-                 <a href="#" class="btn btn-info-outline btn-lg"><i class="fa fa-pencil"></i> Faire une demande résidence</a>
+                 <?php 
+
+                  $file = get_field('file');
+
+                  if( $file ): ?>
+                    
+                    <a href="<?php echo $file['url']; ?>" class="btn btn-info-outline btn-lg"><i class="fa fa-pencil"></i> Faire une demande résidence</a>
+                    
+                  <?php endif; ?>
+                 
                </div>
             </div>
           </div>
