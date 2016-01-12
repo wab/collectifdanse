@@ -19,8 +19,9 @@ $args = array_merge( $args , $wp_query->query );
 query_posts( $args );
 ?>
 
-<h1>L'agenda</h1>
-<hr>
+<div class="page-header">
+ <h1 class="h2">L'agenda <?php if ( is_tax( 'event-type', 'compagnie' )  ) { ?>/ <small><?php single_cat_title(); ?></small> <?php } ?></h1>
+</div>
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
     <?php _e('Sorry, no results were found.', 'sage'); ?>

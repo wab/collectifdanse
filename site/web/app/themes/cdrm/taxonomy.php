@@ -19,7 +19,9 @@ $args = array_merge( $args , $wp_query->query );
 query_posts( $args );
 ?>
 
-<?php get_template_part('templates/page', 'header'); ?>
+<div class="page-header">
+ <h1 class="h2">L'agenda / <small class='text-muted'><?php single_cat_title(); ?></small> </h1>
+</div>
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
     <?php _e('Sorry, no results were found.', 'sage'); ?>
