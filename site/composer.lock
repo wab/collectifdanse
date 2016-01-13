@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6a8cede93466c3312dd65dfe8301e980",
-    "content-hash": "c60d85cf3a29e60587fa5e9cd60fa3dd",
+    "hash": "62705d19aa6095ba16ab4131d6a6c0f2",
+    "content-hash": "ce93c989627db443ed3f008321b161f1",
     "packages": [
         {
             "name": "composer/installers",
@@ -302,6 +302,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
+        },
+        {
+            "name": "wpackagist-plugin/ninja-forms",
+            "version": "2.9.33",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/ninja-forms/",
+                "reference": "tags/2.9.33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.2.9.33.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ninja-forms/"
         },
         {
             "name": "wpackagist-plugin/relevanssi",

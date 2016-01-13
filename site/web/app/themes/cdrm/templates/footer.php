@@ -5,9 +5,9 @@
 			<div class="col-md-4">
 				<address>
 					<h1>Le garage</h1>
-					<p><i class="fa fa-map-marker"></i> 18 Rue André et Yvonne Meynier,<br> 35000 Rennes</p>
+					<p><i class="fa fa-map-marker"></i> 8 Rue André et Yvonne Meynier,<br> 35000 Rennes</p>
 					<p><i class="fa fa-phone"></i> 02 23 46 79 41</p>
-					<p><a href="#" class="btn btn-primary"><i class="fa fa-envelope"></i> Nous contacter</a></p>
+					<p><a href="<?php bloginfo('url');?>/contact" class="btn btn-primary"><i class="fa fa-envelope"></i> Nous contacter</a></p>
 				</address>
 			</div>
 		</row>
@@ -27,27 +27,28 @@
 		      ?>
 	    </div>
 	    <div class="col-lg-4 col-md-8 col-sm-12">
-	      <h2 class="h4"><span class="fa fa-link"></span> Quelques liens utiles ...</h2>
+	      
+	      <?php
+		      if (has_nav_menu('link')) : ?>
+
+		  <h2 class="h4"><span class="fa fa-link"></span> Quelques liens utiles ...</h2>
 	      <hr>
-	      <ul class="list-unstyled">
-	        <li><a href="index.html">Lorem ipsum dolor adipisicing elit.</a></li>
-	        <li><a href="index.html">Lorem ipsum, consectetur adipisicing elit.</a></li>
-	        <li><a href="index.html">Lorem ipsum dolor sit amet,</a></li>
-	        <li><a href="index.html">Lorem ipsum amet,  elit.</a></li>
-	        <li><a href="index.html">Lorem  adipisicing elit.</a></li>
-	      </ul>
+
+		  <?php 
+		  	wp_nav_menu(['theme_location' => 'link', 'menu_class' => 'list-unstyled']);
+		    endif; ?>
 	    </div>
 	    <div class="col-lg-4 col-md-8 col-sm-12">
 	      <h2 class="h4"><span class="fa fa-send"></span> La newsletter</h2>
 	      <hr>
 	      <p>Inscrivez-vous à notre newsletter mensuelle</p>
-	        
+	        <!--
 	        <div class="input-group">
 	          <input type="text" class="form-control" placeholder="entrez votre email">
 	          <span class="input-group-btn">
 	            <button class="btn btn-info" type="button">S'inscrire</button>
 	          </span>
-	        </div><!-- /input-group -->
+	        </div> /input-group -->
 	    </div>
 	  </div>
 	  <hr>
