@@ -13,3 +13,16 @@
   @extend .btn;
   @extend .btn-default;
 }
+
+.ninja-forms-form {
+	.field-wrap {
+		@extend .form-group;
+
+	}
+
+	.ninja-forms-field  {
+		@extend .form-control;
+		
+	}
+	
+}

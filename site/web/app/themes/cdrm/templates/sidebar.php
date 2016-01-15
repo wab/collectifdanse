@@ -49,8 +49,8 @@
 <?php if(is_post_type_archive('post') || is_home() || is_singular('post')   )  : ?>
 
 	<h2 class="h4">Catégories :</h2>
-	<ul class="nav nav-category">
-		<?php wp_list_categories('title_li=&exclude=15&walker=Walker_Category'); ?>
+	<ul>
+		<?php wp_list_categories('title_li=&show_count=1&exclude=15&walker=Walker_Category'); ?>
 	</ul>
 	<hr>
 	<?php dynamic_sidebar('sidebar-post'); ?>

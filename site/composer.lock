@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "62705d19aa6095ba16ab4131d6a6c0f2",
-    "content-hash": "ce93c989627db443ed3f008321b161f1",
+    "hash": "5b589b0f0c1dd682caf08e78332dc307",
+    "content-hash": "88700e5aae9d4bf229dca70f6ff3b541",
     "packages": [
         {
             "name": "composer/installers",
@@ -302,6 +302,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
+        },
+        {
+            "name": "wpackagist-plugin/mailchimp-for-wp",
+            "version": "3.0.12",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/mailchimp-for-wp/",
+                "reference": "tags/3.0.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/mailchimp-for-wp.3.0.12.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/mailchimp-for-wp/"
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
