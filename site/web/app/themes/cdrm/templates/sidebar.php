@@ -30,10 +30,6 @@
     
 ?>
 
-<?php get_template_part('templates/searchform'); ?>
-
-<hr>
-
 <?php if(is_post_type_archive('event') || is_page_template('page-archives.php') || is_tax('event-type') || is_tax('compagnie') || is_singular('event') )   : ?>
 
 	<p><a href="<?php bloginfo('url') ?>/archives" class="btn btn-block btn-primary-outline <?php if (is_page_template('page-archives.php')) { echo 'active disabled'; } ?>"><i class="fa fa-archive"></i> voir les archives</a></p>
@@ -46,18 +42,17 @@
 	<ul class="nav nav-category">
 		<?php wp_list_categories( $compagnies ); ?>
 	</ul>
-
+	<hr>
 	<?php dynamic_sidebar('sidebar-event'); ?>
-
 <?php endif; ?>
 
-<?php if(is_post_type_archive('post') || is_home() || is_singular('post') || is_archive()  )  : ?>
+<?php if(is_post_type_archive('post') || is_home() || is_singular('post')   )  : ?>
 
 	<h2 class="h4">Catégories :</h2>
 	<ul class="nav nav-category">
-		<?php wp_list_categories('title_li=&walker=Walker_Category'); ?>
+		<?php wp_list_categories('title_li=&exclude=15&walker=Walker_Category'); ?>
 	</ul>
-
+	<hr>
 	<?php dynamic_sidebar('sidebar-post'); ?>
 
 <?php endif; ?>

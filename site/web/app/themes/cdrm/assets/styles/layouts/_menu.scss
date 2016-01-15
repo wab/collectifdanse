@@ -46,13 +46,14 @@
 }
 
 .menu {
-	width: 240px;
+	position: relative;
 	height: 100%;
-	padding: 2em 1em;
+	z-index: 1001;
+	padding: 2em;
 	text-align: right;
 	font-family: $headings-font-family;
 	background: darken($brand-primary, 15%);
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	font-weight: 600;
 	
 	ul > li > a {
@@ -74,8 +75,11 @@
 	}
 	
 	.reseaux {
-		padding: 4px 0;
+		font-size: 1.4em;
+		padding: 0.5rem 0;
+		margin-bottom: 0.5rem;
 		border-top: solid 1px rgba(255,255,255,0.1);
+		border-bottom: solid 1px rgba(255,255,255,0.1);
 	}
 }
 

@@ -10,6 +10,12 @@ img {
 	@extend .img-responsive;
 }
 
+a {
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
 .content-wrap {
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;

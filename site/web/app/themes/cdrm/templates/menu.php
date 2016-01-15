@@ -6,9 +6,10 @@
       endif;
       ?>
     <div class="reseaux">
-      <a href="#"><i class="fa fa-facebook-square"></i></a>
+      <a href=""><i class="fa fa-facebook-square"></i></a>
       <a href="#"><i class="fa fa-rss-square"></i></a>
     </div>
+    <?php get_template_part('templates/searchform'); ?>
   </nav>
   <button class="close-button" id="close-button">Close Menu</button>
   <div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">

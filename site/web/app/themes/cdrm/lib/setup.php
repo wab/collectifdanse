@@ -59,11 +59,20 @@ add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
  */
 function widgets_init() {
   register_sidebar([
-    'name'          => __('Primary', 'sage'),
-    'id'            => 'sidebar-primary',
+    'name'          => 'Sidebar agenda',
+    'id'            => 'sidebar-event',
     'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
+    'after_widget'  => '</section><hr/>',
+    'before_title'  => '<h2 class="h4">',
+    'after_title'   => '</h3>'
+  ]);
+
+  register_sidebar([
+    'name'          => 'Sidebar actualités',
+    'id'            => 'sidebar-post',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section><hr/>',
+    'before_title'  => '<h2 class="h4">',
     'after_title'   => '</h3>'
   ]);
 
@@ -72,7 +81,7 @@ function widgets_init() {
     'id'            => 'sidebar-footer',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
+    'before_title'  => '<h2 class="h4">',
     'after_title'   => '</h3>'
   ]);
 }

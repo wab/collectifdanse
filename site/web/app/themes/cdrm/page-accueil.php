@@ -3,20 +3,26 @@
  * Template Name: Page accueil
  */
 
+$actu = array(
+	'post_type' => 'post',
+	'posts_per_page' => 3,
+	'category_name' => 'accueil'
+	);
+
 $agenda = array(
-  'post_type' => 'event',
-  'posts_per_page' => 3,
-  'orderby' => 'meta_value_num',
-  'order' => 'ASC',
-  'meta_type' => 'DATE',
-  'meta_key'=> 'event_start_date',
-  'tax_query' => array(
-    array(
-      'taxonomy' => 'event-type',
-      'field'    => 'slug',
-      'terms'    => 'residences',
-    ),
-  ),
+	'post_type' => 'event',
+	'posts_per_page' => 3,
+	'orderby' => 'meta_value_num',
+	'order' => 'ASC',
+	'meta_type' => 'DATE',
+	'meta_key'=> 'event_start_date',
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'event-type',
+			'field'    => 'slug',
+			'terms'    => 'residences',
+			),
+		),
   'meta_query'  => array(         // restrict posts based on meta values
     'key'     => 'event_end_date',  // which meta to query
     'value'   => date("y-m-d"),  // value for comparison
@@ -24,80 +30,109 @@ $agenda = array(
     'type'    => 'DATE'         // datatype, we don't want to compare the string values
   ) // end meta_query array
 
-);
+  );
 
 ?>
 <?php while (have_posts()) : the_post(); ?>
-	<?php
-        do_action('get_header');
-        get_template_part('templates/header');
-    ?>
+<?php
+do_action('get_header');
+get_template_part('templates/header');
+?>
 
-     <main class="section" role="main">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-md-9 col-sm-12">
-               <div class="presentation">
-	
-  				<?php get_template_part('templates/content', 'page'); ?>
+<main class="section" role="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-9 col-sm-12">
+				<div class="presentation">
 
-  				</div>
-               <div class="cta">
-                 <a href="<?php bloginfo('url') ?>/le-projet" class="btn btn-primary btn-lg"><i class="fa fa-search"></i> Découvrir le projet</a>
-                 <?php 
+					<?php get_template_part('templates/content', 'page'); ?>
 
-                  $file = get_field('file');
+				</div><!-- presentation -->
+				<div class="cta">
+					<a href="<?php bloginfo('url') ?>/le-projet" class="btn btn-primary btn-lg"><i class="fa fa-search"></i> Découvrir le projet</a>
+					<?php 
 
-                  if( $file ): ?>
-                    
-                    <a href="<?php echo $file['url']; ?>" class="btn btn-info-outline btn-lg"><i class="fa fa-pencil"></i> Faire une demande résidence</a>
-                    
-                  <?php endif; ?>
-                 
-               </div>
-            </div>
-          </div>
-        </div>
-      </main>
+					$file = get_field('file');
 
-       <section class="agenda section">
-        <div class="container">
-          <h1>Les résidences en cours et à venir</h1>
-          <div class="row">
+					if( $file ): ?>
 
-            <?php 
-              // the query
-              $agenda_query = new WP_Query( $agenda ); ?>
+					<a href="<?php echo $file['url']; ?>" class="btn btn-info-outline btn-lg"><i class="fa fa-pencil"></i> Faire une demande résidence</a>
 
-              <?php if ( $agenda_query->have_posts() ) : ?>
+				<?php endif; ?>
 
-                <!-- pagination here -->
+  			</div><!-- cta -->
+  		</div><!-- col -->
+  	</div><!-- row -->
+  </div><!-- container -->
+</main>
 
-                <!-- the loop -->
-                <?php while ( $agenda_query->have_posts() ) : $agenda_query->the_post(); ?>
-                  <div class="col-lg-4 col-md-8 col-sm-10 col-xs-12">
-                    <div class="card">
-                      <?php get_template_part('templates/excerpt', 'event'); ?>
-                    </div>
-                  </div>
-                  
-                <?php endwhile; ?>
-                <!-- end of the loop -->
+<?php $actu_query = new WP_Query( $actu ); ?>
 
-                <!-- pagination here -->
+<?php if ( $actu_query->have_posts() ) : ?>
 
-                <?php wp_reset_postdata(); ?>
+<div class="section actu">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-9 col-sm-12">
+			<!-- pagination here -->
 
-              <?php else : ?>
-                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-              <?php endif; ?>
-            
-          </div>
-          <p class="text-right"><i class="fa fa-plus"></i> <a href="<?php bloginfo('url');?>/event">consulter l'agenda</a></p>
-        </div>
-        
-      </section> <!-- /.agenda -->
+			<ul class="list-unstyled">
+
+				<!-- the loop -->
+				<?php while ( $actu_query->have_posts() ) : $actu_query->the_post(); ?>
+					<li class="item">
+						<h2><?php the_title(); ?></h2>
+						<p><?php the_excerpt(); ?></p>
+						<a href="<?php the_permalink(); ?>" class="btn btn-lg btn-secondary">Lire</a>
+					</li>
+				<?php endwhile; ?>
+				<!-- end of the loop -->
+
+				<!-- pagination here -->
+				</ul>
+  		</div><!-- col -->
+  	</div><!-- row -->
+	</div><!-- container -->
+</div><!-- actu -->
+
+	<?php wp_reset_postdata(); ?>
+ 
+<?php endif; ?>
+
+<?php $agenda_query = new WP_Query( $agenda ); ?>
+
+<?php if ( $agenda_query->have_posts() ) : ?>
+
+	<section class="agenda section">
+		<div class="container">
+			<h1>Les résidences en cours et à venir</h1>
+			<div class="row">
+
+				<!-- pagination here -->
+
+				<!-- the loop -->
+				<?php while ( $agenda_query->have_posts() ) : $agenda_query->the_post(); ?>
+				<div class="col-lg-4 col-md-8 col-sm-10 col-xs-12">
+					<div class="card">
+						<?php get_template_part('templates/excerpt', 'event'); ?>
+					</div>
+				</div>
+
+				<?php endwhile; ?>
+				<!-- end of the loop -->
+
+				<!-- pagination here -->
+
+ 			</div><!-- row -->
+			<p class="text-right"><i class="fa fa-plus"></i> <a href="<?php bloginfo('url');?>/event">consulter l'agenda</a></p>
+		</div><!-- container -->
+
+	</section> <!-- /.agenda -->
+
+	<?php wp_reset_postdata(); ?>
+ 
+<?php endif; ?>
 
 <?php endwhile; ?>
 
-     
+
