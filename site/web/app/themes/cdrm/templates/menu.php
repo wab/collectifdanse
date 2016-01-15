@@ -6,8 +6,8 @@
       endif;
       ?>
     <div class="reseaux">
-      <a href=""><i class="fa fa-facebook-square"></i></a>
-      <a href="#"><i class="fa fa-rss-square"></i></a>
+      <a href="https://fr-fr.facebook.com/collectifdanseCDRM"><i class="fa fa-facebook-square"></i></a>
+      <a href="<?php bloginfo('rss2_url'); ?>"><i class="fa fa-rss-square"></i></a>
     </div>
     <?php get_template_part('templates/searchform'); ?>
   </nav>
