@@ -42,7 +42,8 @@
 	    <div class="col-lg-4 col-md-8 col-sm-12">
 	      <h2 class="h4"><span class="fa fa-send"></span> La newsletter</h2>
 	      <hr>
-	      <p>Inscrivez-vous à notre newsletter mensuelle</p>
+	      <p><a href="http://eepurl.com/bSghGz" class="btn btn-info">Inscrivez-vous à notre newsletter mensuelle</a></p>
+
 	        <!--
 	        <div class="input-group">
 	          <input type="text" class="form-control" placeholder="entrez votre email">
