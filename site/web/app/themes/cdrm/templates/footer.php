@@ -52,6 +52,6 @@
 	    </div>
 	  </div>
 	  <hr>
-	  <p class="text-right"><span class="fa fa-copyright"></span> Collectif Danse Rennes Métropole / <a href="<?php bloginfo('url');?>/contact">contact</a> / <a href="<?php bloginfo('url');?>/sitemap_index.xml">plan du site</a></p>
+	  <p class="text-right">&copy; Collectif Danse Rennes Métropole / <a href="<?php bloginfo('url');?>/contact">contact</a> / <a href="<?php bloginfo('url');?>/sitemap_index.xml">plan du site</a> / <i class="fa fa-sign-in"></i> <a href="<?php echo wp_login_url(); ?> ">se connecter</a></p>
 	</div>
 </footer>
