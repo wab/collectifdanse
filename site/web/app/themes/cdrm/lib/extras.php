@@ -31,3 +31,29 @@ function excerpt_more() {
   return ' &hellip; ';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
+
+// Custom logo on login page
+function custom_login_logo() { ?>
+    <style type="text/css">
+      .login h1 a {
+          text-indent: 0;
+          font-size: 2rem;
+          width: 100%;
+          height: auto;
+          background-image: none;
+          background-size: 100%;
+      }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts',  __NAMESPACE__ . '\\custom_login_logo' );
+
+function change_post_menu_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Actualités';
+    $submenu['edit.php'][5][0] = 'Actualités';
+    $submenu['edit.php'][10][0] = 'Ajouter une actualité';
+    echo '';
+}
+add_action( 'admin_menu', __NAMESPACE__ . '\\change_post_menu_label' );
+
