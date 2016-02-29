@@ -16,13 +16,14 @@ use Roots\Sage\Wrapper;
     <?php get_template_part('templates/menu');?>
 
     <div class="content-wrap">
-
+      <div class="content">
       <?php include Wrapper\template_path(); ?>
 
       <?php
         do_action('get_footer');
         get_template_part('templates/footer');
      ?>
+   </div> <!-- content -->
     </div> <!-- /.content-wrap -->
     
     <?php wp_footer(); ?>

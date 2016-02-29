@@ -38,18 +38,19 @@
 .menu-wrap {
 	position: absolute;
 	z-index: 1001;
-	width: 300px;
+	width: 350px;
 	height: 100%;
 	font-size: 1.15em;
-	transform: translate3d(-300px,0,0);
+	transform: translate3d(-350px,0,0);
 	transition: transform 0.3s;
 }
 
 .menu {
 	position: relative;
 	height: 100%;
+	width: calc(100% - 60px);
 	z-index: 1001;
-	padding: 2em;
+	padding: 2em 0 2em 1em;
 	text-align: right;
 	font-family: $headings-font-family;
 	background: darken($brand-primary, 15%);
@@ -111,7 +112,7 @@
 	height: 100%;
 	top: 0;
 	right: 0;
-	fill: #331a4c;
+	fill: darken($brand-primary, 15%);
 	z-index: 1000;
 }
 
@@ -122,7 +123,7 @@
 
 .show-menu .content-wrap {
 	transition-delay: 0.1s;
-	transform: translate3d(100px,0,0);
+	transform: translate3d(150px,0,0);
 }
 
 .show-menu .content::before {

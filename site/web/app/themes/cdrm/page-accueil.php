@@ -82,8 +82,8 @@ get_template_part('templates/header');
 				<?php while ( $actu_query->have_posts() ) : $actu_query->the_post(); ?>
 					<li class="item">
 						<h2><?php the_title(); ?></h2>
-						<p><?php the_excerpt(); ?></p>
-						<a href="<?php the_permalink(); ?>" class="btn btn-lg btn-secondary">Lire</a>
+						<?php the_excerpt(); ?>
+						<p><a href="<?php the_permalink(); ?>" class="btn btn-lg btn-secondary">Lire</a></p>
 					</li>
 				<?php endwhile; ?>
 				<!-- end of the loop -->

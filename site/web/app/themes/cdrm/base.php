@@ -17,7 +17,7 @@ use Roots\Sage\Wrapper;
     <?php get_template_part('templates/menu');?>
 
     <div class="content-wrap">
-
+      <div class="content">
       <?php
         do_action('get_header');
         get_template_part('templates/header');
@@ -38,7 +38,8 @@ use Roots\Sage\Wrapper;
         do_action('get_footer');
         get_template_part('templates/footer');
      ?>
-    </div>
+     </div><!-- content -->
+    </div><!-- content-wrap -->
     <?php wp_footer(); ?>
 
   </body>
