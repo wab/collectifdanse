@@ -30,7 +30,7 @@
     
 ?>
 
-<?php if(is_post_type_archive('event') || is_page_template('page-archives.php') || is_tax('event-type') || is_tax('compagnie') || is_singular('event') )   : ?>
+<?php if(is_post_type_archive('agenda') || is_page_template('page-archives.php') || is_tax('event-type') || is_tax('compagnie') || is_singular('agenda') )   : ?>
 
 	<p><a href="<?php bloginfo('url') ?>/archives" class="btn btn-block btn-primary-outline <?php if (is_page_template('page-archives.php')) { echo 'active disabled'; } ?>"><i class="fa fa-archive"></i> voir les archives</a></p>
 	<h2 class="h4">Catégories :</h2>

@@ -3,7 +3,7 @@
 Template Name: Page d'archives
 */
 $archives = array(
-  'post_type' => 'event',
+  'post_type' => 'agenda',
   'posts_per_page' => -1,
   'orderby' => 'meta_value_num',
   'order' => 'ASC',
