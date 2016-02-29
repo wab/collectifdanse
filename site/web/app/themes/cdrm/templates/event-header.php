@@ -31,11 +31,11 @@
 
 	    	<?php if(is_single()): ?>
 
-	    		<h1 class="entry-title"><small>Cie</small> <?php echo $compagnie->name; ?></h1>
+	    		<h1 class="entry-title"><small>Cie</small> <?php echo $compagnie->name; ?><?php if( get_field('choregraphes') ): ?><small class="text-muted" > / <?php the_field('choregraphes'); ?></small><?php endif; ?></h1>
 
 	    	<?php else: ?>
 
-				<h2 class="entry-title h3"><small>Cie</small> <?php echo $compagnie->name; ?></h2>
+				<h2 class="entry-title h3"><small>Cie</small> <?php echo $compagnie->name; ?><?php if( get_field('choregraphes') ): ?><small class="text-muted" > / <?php the_field('choregraphes'); ?></small><?php endif; ?></h2>
 
 	    	<?php endif; ?>
 
@@ -43,11 +43,11 @@
 
 	    <?php if(is_single()): ?>
 
-	    	<h2 class="entry-title text-muted"><?php the_title(); ?></h2>
+	    	<h2 class="entry-title text-info"><?php the_title(); ?></h2>
 
 	    <?php else: ?>
 
-	    	<h3 class="entry-title h5 text-muted"><?php the_title(); ?></h3>
+	    	<h3 class="entry-title h5 text-info"><?php the_title(); ?></h3>
 
 	    <?php endif; ?>
 
@@ -67,17 +67,21 @@
 
 			<?php if(is_single()): ?>
 
-	    		<h2 class="entry-title text-muted"><small>Cie</small> <?php echo $compagnie->name; ?></h3>
+	    		<h2 class="entry-title text-muted"><small>Cie</small> <?php echo $compagnie->name; ?><?php if( get_field('choregraphes') ): ?><small class="text-muted" > / <?php the_field('choregraphes'); ?></small><?php endif; ?></h3>
 
 	    	<?php else: ?>
 
-	    		<h3 class="entry-title h5 text-muted"><small>Cie</small> <?php echo $compagnie->name; ?></h3>
+	    		<h3 class="entry-title h5 text-muted"><small>Cie</small> <?php echo $compagnie->name; ?><?php if( get_field('choregraphes') ): ?><small class="text-muted" > / <?php the_field('choregraphes'); ?></small><?php endif; ?></h3>
 
 	    	<?php endif; ?>
 
 	    <?php endif; ?>
-
 	    
+    <?php endif; ?>
+	
+	<?php if( get_field('sous_titre') ): ?>
+
+		<p><em><?php the_field('sous_titre'); ?></em></p>
 
     <?php endif; ?>
     

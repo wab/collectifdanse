@@ -3,7 +3,10 @@
      <?php get_template_part('templates/event-header'); ?>
     <div class="entry-content">
       <?php if ( has_post_thumbnail() ) : ?>
-          <?php the_post_thumbnail('large', array('class' => 'img-fluid')); ?>
+          <p><?php the_post_thumbnail('large', array('class' => 'img-fluid img-rounded')); ?></p>
+          <?php if ( get_field('copyright') ) : ?>
+            <p class="text-muted">&copy; <?php the_field('copyright'); ?></p>
+          <?php endif; ?>
       <?php endif; ?>
       <?php the_content(); ?>
     </div>

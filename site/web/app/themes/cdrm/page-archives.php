@@ -46,8 +46,7 @@ $archives = array(
 	    <!-- the loop -->
 	    <?php while ( $archives_query->have_posts() ) : $archives_query->the_post(); ?>
 	      <li>
-	      	<?php get_template_part('templates/event-header'); ?>
-	      	<i class="fa fa-chevron-right"></i> <a href="<?php the_permalink(); ?>">Lire la suite</a>
+	      	<?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 	      </li>
 	      
 	    <?php endwhile; ?>

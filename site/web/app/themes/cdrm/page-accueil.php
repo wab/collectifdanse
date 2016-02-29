@@ -5,7 +5,7 @@
 
 $actu = array(
 	'post_type' => 'post',
-	'posts_per_page' => 3,
+	'posts_per_page' => 1,
 	'category_name' => 'accueil'
 	);
 
@@ -88,8 +88,8 @@ get_template_part('templates/header');
 				<?php endwhile; ?>
 				<!-- end of the loop -->
 
-				<!-- pagination here -->
-				</ul>
+			<!-- pagination here -->
+			</ul>
   		</div><!-- col -->
   	</div><!-- row -->
 	</div><!-- container -->
@@ -112,7 +112,7 @@ get_template_part('templates/header');
 
 				<!-- the loop -->
 				<?php while ( $agenda_query->have_posts() ) : $agenda_query->the_post(); ?>
-				<div class="col-lg-4 col-md-8 col-sm-10 col-xs-12">
+				<div class="col-lg-4 col-md-12">
 					<div class="card">
 						<?php get_template_part('templates/excerpt', 'event'); ?>
 					</div>

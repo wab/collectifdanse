@@ -45,13 +45,11 @@ a {
 	padding: $jumbotron-padding 0;
 }
 
-.archive {
-	.hentry {
-		@include clearfix();
-		padding-bottom: 1rem;
-		margin-bottom: 1rem;
-		border-bottom: 1px solid $gray-lighter;
-	}
+.excerpt {
+	@include clearfix();
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid $gray-lighter;
 }
 
 .page-header {

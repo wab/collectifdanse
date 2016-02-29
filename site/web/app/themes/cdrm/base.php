@@ -22,8 +22,13 @@ use Roots\Sage\Wrapper;
         do_action('get_header');
         get_template_part('templates/header');
       ?>
-      <div class="wrap container p-t-lg p-b-lg" role="document">
-        <div class="content section row">
+      <div class="wrap container p-t-3 p-b-3" role="document">
+        
+       <?php if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb('<p class="breadcrumb">','</p>');
+      } ?>
+        
+        <div class="content row">
           <main class="main" role="main">
             <?php include Wrapper\template_path(); ?>
           </main><!-- /.main -->
