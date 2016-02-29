@@ -21,11 +21,11 @@ a {
 	transition: transform 0.3s;
 }
 
-.content {
+.bigwrapper {
 	position: relative;
 }
 
-.content::before {
+.bigwrapper::before {
 	position: absolute;
 	top: 0;
 	left: 0;

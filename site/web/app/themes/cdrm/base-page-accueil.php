@@ -16,7 +16,7 @@ use Roots\Sage\Wrapper;
     <?php get_template_part('templates/menu');?>
 
     <div class="content-wrap">
-      <div class="content">
+      <div class="bigwrapper">
       <?php include Wrapper\template_path(); ?>
 
       <?php
