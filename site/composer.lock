@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5b589b0f0c1dd682caf08e78332dc307",
-    "content-hash": "88700e5aae9d4bf229dca70f6ff3b541",
+    "hash": "8297748c7930e9a16722140b6e2238b9",
+    "content-hash": "89600eebc142315bed60ad7193bac482",
     "packages": [
         {
             "name": "composer/installers",
@@ -302,6 +302,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
+        },
+        {
+            "name": "wpackagist-plugin/antispam-bee",
+            "version": "2.6.8",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/antispam-bee/",
+                "reference": "tags/2.6.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/antispam-bee.2.6.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/antispam-bee/"
         },
         {
             "name": "wpackagist-plugin/mailchimp-for-wp",
