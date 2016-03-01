@@ -10,7 +10,7 @@ $actu = array(
 	);
 
 $agenda = array(
-	'post_type' => 'event',
+	'post_type' => 'agenda',
 	'posts_per_page' => 3,
 	'orderby' => 'meta_value_num',
 	'order' => 'ASC',
