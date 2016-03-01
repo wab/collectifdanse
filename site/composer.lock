@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8297748c7930e9a16722140b6e2238b9",
-    "content-hash": "89600eebc142315bed60ad7193bac482",
+    "hash": "c60aad17df9251a1844974613d356d04",
+    "content-hash": "375fa8c4ff7ea6b03a63d895bee1be50",
     "packages": [
         {
             "name": "composer/installers",
@@ -344,6 +344,26 @@
             "homepage": "https://wordpress.org/plugins/mailchimp-for-wp/"
         },
         {
+            "name": "wpackagist-plugin/members",
+            "version": "1.1.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/members/",
+                "reference": "tags/1.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/members.1.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/members/"
+        },
+        {
             "name": "wpackagist-plugin/ninja-forms",
             "version": "2.9.33",
             "source": {
@@ -425,15 +445,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.0.7",
+            "version": "3.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.0.7"
+                "reference": "tags/3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.0.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.1.zip",
                 "reference": null,
                 "shasum": null
             },
