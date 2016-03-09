@@ -124,7 +124,7 @@ get_template_part('templates/header');
 				<!-- pagination here -->
 
  			</div><!-- row -->
-			<p class="text-right"><i class="fa fa-plus"></i> <a href="<?php bloginfo('url');?>/event">consulter l'agenda</a></p>
+			<p class="text-right"><i class="fa fa-plus"></i> <a href="<?php bloginfo('url');?>/agenda">consulter l'agenda</a></p>
 		</div><!-- container -->
 
 	</section> <!-- /.agenda -->
