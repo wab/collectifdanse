@@ -1,0 +1,27 @@
+.home {
+	.presentation {
+		font-size: 1.4em;
+	}
+	.actu {
+		@extend .bg-info;
+		.item {
+			padding-top: 1em;
+			margin-top: 1em;
+			border-top: 1px solid #fff;
+
+			&:first-child {
+				padding: 0;
+				margin: 0;
+				border: none;
+			}
+		}
+	}
+	.agenda {
+		background: $gray-lighter
+	}
+
+	.excerpt {
+		background: #fff;
+		padding: $spacer / 2;
+	}
+}

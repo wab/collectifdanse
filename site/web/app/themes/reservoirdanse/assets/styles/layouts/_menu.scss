@@ -1,0 +1,133 @@
+
+
+/* Close Button */
+.close-button {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	overflow: hidden;
+	text-indent: 16px;
+	border: none;
+	z-index: 1001;
+	background: transparent;
+	color: transparent;
+}
+
+.close-button::before,
+.close-button::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	top: 0;
+	left: 50%;
+	background: #95a5a6;
+}
+
+.close-button::before {
+	transform: rotate(45deg);
+}
+
+.close-button::after {
+	transform: rotate(-45deg);
+}
+
+/* Menu */
+.menu-wrap {
+	position: absolute;
+	z-index: 1001;
+	width: 350px;
+	height: 100%;
+	font-size: 1.15em;
+	transform: translate3d(-350px,0,0);
+	transition: transform 0.3s;
+}
+
+.menu {
+	position: relative;
+	height: 100%;
+	width: calc(100% - 60px);
+	z-index: 1001;
+	padding: 2em 0 2em 1em;
+	text-align: right;
+	font-family: $headings-font-family;
+	background: darken($brand-primary, 15%);
+	font-size: 1.4rem;
+	font-weight: 600;
+	
+	ul > li > a {
+		display: block;
+	} 
+	
+	a {
+ 		text-transform: uppercase;
+ 		text-shadow : 1px 1px 0px rgba(0,0,0,0.4);
+
+		&:hover, &:focus {
+			color: lighten($brand-primary, 15%);
+			text-decoration: none;
+		}
+	}
+	
+	.active > a {
+		color: #fff;
+	}
+	
+	.reseaux {
+		font-size: 1.4em;
+		padding: 0.5rem 0;
+		margin-bottom: 0.5rem;
+		border-top: solid 1px rgba(255,255,255,0.1);
+		border-bottom: solid 1px rgba(255,255,255,0.1);
+	}
+}
+
+.icon-list {
+	width: 280px;
+}
+
+.icon-list a {
+	display: block;
+	padding: 0.8em;
+}
+
+.icon-list a i {
+	opacity: 0.5;
+}
+
+.icon-list a span {
+	margin-left: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: 0.75em;
+}
+
+/* Morph Shape */
+.morph-shape {
+	position: absolute;
+	width: 60px;
+	height: 100%;
+	top: 0;
+	right: 0;
+	fill: darken($brand-primary, 15%);
+	z-index: 1000;
+}
+
+/* Shown menu */
+.show-menu .menu-wrap {
+	transform: translate3d(0,0,0);
+}
+
+.show-menu .content-wrap {
+	transition-delay: 0.1s;
+	transform: translate3d(150px,0,0);
+}
+
+.show-menu .bigwrapper::before {
+	opacity: 1;
+	transition: opacity 0.3s;
+	transform: translate3d(0,0,0);
+}
