@@ -2,7 +2,8 @@
   "name": "roots/bedrock",
   "type": "project",
   "license": "MIT",
-  "description": "A modern WordPress stack",
+  "description":
+    "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
   "homepage": "https://roots.io/bedrock/",
   "authors": [
     {
@@ -17,7 +18,13 @@
     }
   ],
   "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
+    "bedrock",
+    "roots",
+    "wordpress",
+    "stack",
+    "composer",
+    "vagrant",
+    "wp"
   ],
   "support": {
     "issues": "https://github.com/roots/bedrock/issues",
@@ -29,40 +36,76 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://wpackagist.org"
+      "url": "https://wpackagist.org"
     },
     {
       "type": "package",
       "package": {
         "name": "toolbox-plugin/acf-gallery",
-        "version": "1.1.1",
+        "version": "2.0.1",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
           "url": "https://github.com/wab/acf-gallery/archive/master.zip"
         },
-        "require" : {
-          "composer/installers": "v1.0.12"
+        "require": {
+          "composer/installers": "v1.4"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "deliciousbrains/wp-migrate-db-pro",
+        "type": "wordpress-plugin",
+        "version": "1.8",
+        "dist": {
+          "type": "zip",
+          "url":
+            "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=1b0f680a-0bbb-4da6-bf8f-43d95035be1c&site_url=reservoirdanse.fr"
+        },
+        "require": {
+          "composer/installers": "v1.4"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "deliciousbrains/wp-migrate-db-pro-media-files",
+        "type": "wordpress-plugin",
+        "version": "1.4.8",
+        "dist": {
+          "type": "zip",
+          "url":
+            "https://deliciousbrains.com/dl/wp-migrate-db-pro-media-files-latest.zip?licence_key=1b0f680a-0bbb-4da6-bf8f-43d95035be1c&site_url=reservoirdanse.fr"
+        },
+        "require": {
+          "composer/installers": "v1.4"
         }
       }
     }
   ],
   "require": {
-    "php": ">=5.4",
-    "composer/installers": "~1.0.12",
+    "php": ">=5.6",
+    "composer/installers": "^1.4",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "~4",
-    "roots/soil": "~3.0",
-    "wpackagist-plugin/types": "*",
-    "wpackagist-plugin/advanced-custom-fields": "*",
-    "toolbox-plugin/acf-gallery": "^1.1.1",
-    "wpackagist-plugin/wordpress-seo": "*",
-    "wpackagist-plugin/relevanssi": "~3.4",
-    "wpackagist-plugin/taxonomy-terms-order": "^1.4",
-    "wpackagist-plugin/ninja-forms" : "~2.9",
-    "wpackagist-plugin/mailchimp-for-wp" : "~3.0",
-    "wpackagist-plugin/antispam-bee": "2.6.8",
-    "wpackagist-plugin/members": "^1.1"
+    "johnpbloch/wordpress": "^4",
+    "oscarotero/env": "^1.1.0",
+    "roots/wp-password-bcrypt": "1.0.0",
+    "roots/soil": "^3",
+    "deliciousbrains/wp-migrate-db-pro": "*",
+    "deliciousbrains/wp-migrate-db-pro-media-files": "*",
+    "toolbox-plugin/acf-gallery": "2.0.1",
+    "wpackagist-plugin/regenerate-thumbnails": "^2",
+    "wpackagist-plugin/redirection": "^2.4",
+    "wpackagist-plugin/custom-post-type-ui": "^1.5",
+    "wpackagist-plugin/advanced-custom-fields": "^5.6",
+    "wpackagist-plugin/ninja-forms": "^3.2",
+    "wpackagist-plugin/members": "^2.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.0.2"
   },
   "extra": {
     "installer-paths": {
@@ -71,5 +114,9 @@
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
     "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "post-root-package-install": ["php -r \"copy('.env.example', '.env');\""],
+    "test": ["vendor/bin/phpcs"]
   }
 }
