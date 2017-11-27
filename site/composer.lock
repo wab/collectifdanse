@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5f4d141122716619367b3b78cecac4a1",
-    "content-hash": "f91899ee9ebb707d7431bb7a4d611f3e",
+    "hash": "05cc78ebc2b0d8041021c4370fa007f3",
+    "content-hash": "af69cdace3657ac9117aa9f2dec8e28c",
     "packages": [
         {
             "name": "composer/installers",
@@ -126,7 +126,7 @@
         },
         {
             "name": "deliciousbrains/wp-migrate-db-pro",
-            "version": "1.8",
+            "version": "1.8.1",
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=1b0f680a-0bbb-4da6-bf8f-43d95035be1c&site_url=reservoirdanse.fr",
@@ -140,7 +140,7 @@
         },
         {
             "name": "deliciousbrains/wp-migrate-db-pro-media-files",
-            "version": "1.4.8",
+            "version": "1.4.9",
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-media-files-latest.zip?licence_key=1b0f680a-0bbb-4da6-bf8f-43d95035be1c&site_url=reservoirdanse.fr",
