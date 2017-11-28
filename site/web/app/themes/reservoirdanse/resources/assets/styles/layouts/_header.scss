@@ -1,3 +1,30 @@
-.banner .nav {
-  @extend .menu;
+.banner {
+  @include container;
+  @include vertical-rythm;
+
+  .wrapper {
+    background: $white;
+    height: $headerHeight;
+    font-size: rem-calc(28);
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @include grid-column-row;
+    @include flex;
+    @include flex-align(justify, middle);
+  }
+
+  .social {
+    &-menu {
+      margin-bottom: 0;
+      text-align: right;
+      flex: 1;
+
+      @include nobullet;
+    }
+
+    &-item {
+      display: inline-block;
+    }
+  }
 }

@@ -1,8 +1,17 @@
 /** Colors */
 $foundation-palette: (
-  primary: #27ae60,
-  secondary: #1866ff,
+  primary: #fc351c,
+  secondary: #592e85,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
+
+$headerHeight: 80px;
+$body-font-family: 'Open Sans', Helvetica, Roboto, Arial, sans-serif;
+$global-width: 990px;
+$grid-column-gutter: (
+  small: 20px,
+  medium: 30px,
+);
+$global-transition-function: cubic-bezier(0.8, 0.2, 0.2, 1);

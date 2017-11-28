@@ -1,0 +1,14 @@
+body {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+
+  @include -zf-breakpoint-value(auto, $grid-column-gutter) {
+    $padding: rem-calc($-zf-bp-value) / 2;
+
+    padding-bottom: $padding;
+  }
+}
+
+.container {
+  @include grid-row;
+}

@@ -8,7 +8,7 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/theme/reservoirdanse",
+  "publicPath": "/app/themes/reservoirdanse",
   "devUrl": "http://reservoirdanse.dev",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",

@@ -49,6 +49,8 @@ add_action('after_setup_theme', function () {
      */
     add_theme_support('post-thumbnails');
 
+    set_post_thumbnail_size( 300, 300, true );
+
     /**
      * Enable HTML5 markup support
      * @link https://developer.wordpress.org/reference/functions/add_theme_support/#html5
@@ -125,4 +127,29 @@ add_action('after_setup_theme', function () {
     sage('blade')->compiler()->directive('asset', function ($asset) {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
+});
+
+add_action('pre_get_posts', function ( $query ) {
+
+	// do not modify queries in the admin
+	if( is_admin() ) {
+		return $query;
+    }
+
+    $metaquery = array(
+        'key'     => 'event_end_date',
+        'value'   => date("y-m-d"),
+        'compare' => '>=',
+        'type'    => 'DATE'
+    );
+
+	// only modify queries for 'agenda' post type
+	if( isset($query->query_vars['post_type']) && $query->query_vars['post_type'] == 'agenda' ) {
+		$query->set('orderby', 'meta_value');
+		$query->set('meta_key', 'event_start_date');
+        $query->set('order', 'ASC');
+        $query->set('meta_query', $metaquery);
+	}
+	// return
+	return $query;
 });
