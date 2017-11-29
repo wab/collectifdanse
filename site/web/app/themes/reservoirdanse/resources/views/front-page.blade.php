@@ -6,40 +6,49 @@
     <div class="accueil-wrapper">
       <div class="accueil-menu">
         <div class="accueil-menu-item">
+          <h1 class="accueil-title">{{ get_bloginfo('name', 'display') }}</h1>
+          <h2 class="accueil-subtitle">Le Garage</h2>
+        </div>
+        <div class="accueil-menu-item">
           <a class="accueil-menu-link" href="#">
             L'accueil <br> en résidence
-            <hr>
           </a>
         </div>
         <div class="accueil-menu-item">
           <a class="accueil-menu-link" href="/le-projet">
             Découvrir <br> le projet
-            <hr>
           </a>
         </div>
+        <div class="accueil-menu-item empty"></div>
         <div class="accueil-menu-item">
           <a class="accueil-menu-link" href="/le-lieu">
             Contact <br> &amp; infos pratiques
-            <hr>
           </a>
         </div>
+        <div class="accueil-menu-item empty"></div>
         <div class="accueil-menu-item">
           <a class="accueil-menu-link" href="#">
             Partage <br> de répertoire
-            <hr>
           </a>
         </div>
         <div class="accueil-menu-item">
           <a class="accueil-menu-link" href="#">
             Le <br> monstre
-            <hr>
           </a>
         </div>
+        <div class="accueil-menu-item empty"></div>
         <div class="accueil-menu-item">
           <a class="accueil-menu-link" href="/agenda">
-            Tous les<br> évènements
-            <hr>
+            Les<br> évènements
           </a>
+        </div>
+        <div class="accueil-menu-item empty"></div>
+        <div class="accueil-menu-item secondary-menu">
+          <ul class="items">
+            <li><a href="#">mentions légales</a></li>
+            <li><a class="social-link" href="#"><i class="fa fa-facebook"></i> facebook</a></li>
+            <li><a class="social-link" href="#"><i class="fa fa-twitter"></i> twitter</a></li>
+          </ul>
         </div>
       </div>
     </div>

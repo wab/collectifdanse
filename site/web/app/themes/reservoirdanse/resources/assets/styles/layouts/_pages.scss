@@ -1,27 +1,63 @@
-$menu-item-size: rem-calc(290);
+$border: 1px solid $white;
 
 .accueil {
-  &-wrapper {
-    min-height: calc(100vh - #{$headerHeight} - 1rem);
+  &-title {
+    color: $white;
+    font-weight: bold;
+    font-size: rem-calc(56);
+    margin-bottom: 0;
+    line-height: 1.1;
+  }
+
+  &-subtitle {
+    color: $medium-gray;
+    font-size: rem-calc(38);
   }
 
   &-menu {
-    flex-wrap: wrap;
+    display: grid;
+    align-items: stretch;
+    justify-content: stretch;
+    min-height: 100vh;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 200px);
 
-    @include grid-row;
+    @include breakpoint(medium) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 300px);
+    }
+
+    @include breakpoint(large) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+
+    @include breakpoint(xlarge) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
 
     &-item {
-      @include vertical-rythm;
-      @include grid-column(4);
+      border: $border;
+      background: rgba($white, 0.8);
+
+      &:first-child {
+        background: $secondary-color;
+      }
+
+      > * {
+        padding: $global-padding;
+      }
+
+      &.empty {
+        background: none;
+      }
     }
 
     &-link {
       display: block;
-      padding: $global-padding;
-      min-height: $menu-item-size;
-      border-radius: 3px;
-      border: 2px solid rgba($primary-color, 0);
-      background: rgba($white, 0.9);
+      height: 100%;
+      width: 100%;
       font-size: rem-calc(20);
       font-weight: bold;
       color: $secondary-color;
@@ -29,8 +65,16 @@ $menu-item-size: rem-calc(290);
 
       &:hover,
       &:focus {
-        background: rgba($white, 1);
-        border-color: $primary-color;
+        background: $primary-color;
+        color: $white;
+      }
+    }
+
+    .secondary-menu {
+      .items {
+        margin-bottom: 0;
+
+        @include nobullet;
       }
     }
   }
