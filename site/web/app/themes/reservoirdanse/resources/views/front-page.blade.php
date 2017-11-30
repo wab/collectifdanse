@@ -15,13 +15,13 @@
           </a>
         </div>
         <div class="accueil-menu-item">
-          <a class="accueil-menu-link" href="/le-projet">
+          <a class="accueil-menu-link" href="{{get_permalink(20)}}">
             Découvrir <br> le projet
           </a>
         </div>
         <div class="accueil-menu-item empty"></div>
         <div class="accueil-menu-item">
-          <a class="accueil-menu-link" href="/le-lieu">
+          <a class="accueil-menu-link" href="{{get_permalink(32)}}">
             Contact <br> &amp; infos pratiques
           </a>
         </div>
@@ -38,7 +38,7 @@
         </div>
         <div class="accueil-menu-item empty"></div>
         <div class="accueil-menu-item">
-          <a class="accueil-menu-link" href="/agenda">
+          <a class="accueil-menu-link" href="{{get_permalink(23)}}">
             Les<br> évènements
           </a>
         </div>

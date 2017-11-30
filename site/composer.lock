@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "05cc78ebc2b0d8041021c4370fa007f3",
-    "content-hash": "af69cdace3657ac9117aa9f2dec8e28c",
+    "hash": "158e26bafe5116202df1a9b258a612da",
+    "content-hash": "0a69903c9edb614cb3e1d16b9b1d5725",
     "packages": [
         {
             "name": "composer/installers",
@@ -489,6 +489,26 @@
             "time": "2016-09-01 10:05:43"
         },
         {
+            "name": "wpackagist-plugin/acf-to-rest-api",
+            "version": "3.1.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/acf-to-rest-api/",
+                "reference": "tags/3.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/acf-to-rest-api.3.1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/acf-to-rest-api/"
+        },
+        {
             "name": "wpackagist-plugin/advanced-custom-fields",
             "version": "5.6.5",
             "source": {
@@ -499,7 +519,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.5.6.5.zip",
-                "reference": null,
+                "reference": "tags/5.6.5",
                 "shasum": null
             },
             "require": {
@@ -519,7 +539,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.5.6.zip",
-                "reference": null,
+                "reference": "tags/1.5.6",
                 "shasum": null
             },
             "require": {
@@ -539,7 +559,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/members.2.0.2.zip",
-                "reference": null,
+                "reference": "tags/2.0.2",
                 "shasum": null
             },
             "require": {
@@ -559,7 +579,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.2.4.zip",
-                "reference": null,
+                "reference": "tags/3.2.4",
                 "shasum": null
             },
             "require": {
@@ -579,7 +599,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/redirection.2.10.zip",
-                "reference": null,
+                "reference": "tags/2.10",
                 "shasum": null
             },
             "require": {
@@ -599,7 +619,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.3.1.zip",
-                "reference": null,
+                "reference": "tags/2.3.1",
                 "shasum": null
             },
             "require": {
@@ -619,7 +639,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/types.2.2.20.zip",
-                "reference": null,
+                "reference": "tags/2.2.20",
                 "shasum": null
             },
             "require": {

@@ -54,7 +54,7 @@ let webpackConfig = {
         exclude: [/(node_modules|bower_components)(?![/|\\](bootstrap|foundation-sites))/],
         use: [
           { loader: 'cache' },
-          { loader: 'buble', options: { objectAssign: 'Object.assign' } },
+          { loader: 'babel-loader' },
         ],
       },
       {
